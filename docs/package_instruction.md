@@ -361,28 +361,28 @@ OA keeps integrating with various "state-of-the-art" algorithms.
 
 #### Step 1. *[In terminal 1]* Launch Realsense camera node
   
-  ```bash
-  # Terminal 1:
-  . <install-space-with-realsense-ros2-camera>/local_setup.bash
-  realsense_ros2_camera
-  ```
+```bash
+# Terminal 1:
+. <install-space-with-realsense-ros2-camera>/local_setup.bash
+realsense_ros2_camera
+```
 
 #### Step 2. *[In terminal 1]* Launch NCS and OA node
 
-  ```bash
-  # Terminal 2
-  . <install-space-with-object-analytics-launch>/local_setup.bash
-  echo -e "param_file: mobilenetssd.yaml\ninput_topic: /object_analytics/rgb" > `ros2 pkg prefix movidius_ncs_launch`/share/movidius_ncs_launch/config/default.yaml
-  launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/analytics_movidius_ncs.py
-  ```
+```bash
+# Terminal 2
+. <install-space-with-object-analytics-launch>/local_setup.bash
+echo -e "param_file: mobilenetssd.yaml\ninput_topic: /object_analytics/rgb" > `ros2 pkg prefix movidius_ncs_launch`/share/movidius_ncs_launch/config/default.yaml
+launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/analytics_movidius_ncs.py
+```
 
 #### Step 3. *[In terminal 1]* Launch OA Rviz
-  
-  ```bash
-  # Terminal 3
-  . <install-space-with-object-analytics-launch>/local_setup.bash
-  launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/object_rviz.py
-  ```
+
+```bash
+# Terminal 3
+. <install-space-with-object-analytics-launch>/local_setup.bash
+launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/object_rviz.py
+```
 
 ### 3 Interfaces
 
@@ -504,7 +504,7 @@ next step: will implement it while it is ready in next release of ROS2
 
 ### 5 TODO
 
----
+--
 
 ## ros2_moving_object
 
@@ -524,25 +524,27 @@ This component involves 2 ROS2 packages:
 
   #### Step 1. *[In terminal 1]* Launch realsense camera node.
 
-  ```bash
-  source </ros2/install/dir>/local_setup.bash
-  source </my/overlay_ws/dir>/install/local_setup.bash
-  realsense_ros2_camera
-  ```
+```bash
+source </ros2/install/dir>/local_setup.bash
+source </my/overlay_ws/dir>/install/local_setup.bash
+realsense_ros2_camera
+```
 
-  #### Step 2. *[In terminal 2]* Launch object analysis node.
-  ```bash
-  source </ros2/install/dir>/local_setup.bash
-  source </my/overlay_ws/dir>/install/local_setup.bash
-  echo -e "param_file: alexnet.yaml\ninput_topic: /object_analytics/rgb > src/ros2_intel_movidius_ncs/movidius_ncs_launch/config/default.yaml"
-  launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/analytics_movidius_ncs.py
-  ```
-  #### Step 3. *[In terminal 3]* Launch moving object node.
-  ```bash
-  source </ros2/install/dir>/local_setup.bash
-  source </my/overlay_ws/dir>/install/local_setup.bash
-  ros2 run moving_object moving_object
-  ```
+#### Step 2. *[In terminal 2]* Launch object analysis node.
+
+```bash
+source </ros2/install/dir>/local_setup.bash
+source </my/overlay_ws/dir>/install/local_setup.bash
+echo -e "param_file: alexnet.yaml\ninput_topic: /object_analytics/rgb > src/ros2_intel_movidius_ncs/movidius_ncs_launch/config/default.yaml"
+launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/launch/analytics_movidius_ncs.py
+```
+
+#### Step 3. *[In terminal 3]* Launch moving object node.
+```bash
+source </ros2/install/dir>/local_setup.bash
+source </my/overlay_ws/dir>/install/local_setup.bash
+ros2 run moving_object moving_object
+```
 
 ### 3. Interfaces
 
@@ -551,8 +553,8 @@ ros2_moving_object package publishes some messages to indicate different status/
 
 ### 4. Known issues
 
----
+--
 
 ### 5. TODO
 
----
+--
