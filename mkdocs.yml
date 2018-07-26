@@ -1,7 +1,9 @@
 site_name: Intel ROS2 Project Tutorial
+site_author: Liu Shenghui
 pages:
 - Home: Intel-Ros2-Project-Tutorial.md
 - Preparation: preparation.md
 - Installation: installation.md
 - Instruction: package_instruction.md
+- Acknowledgement: acknowledegment.md
 theme: readthedocs
