@@ -50,9 +50,9 @@ $ realsense_ros2_camera
 
 This will launch [RViz](http://wiki.ros.org/rviz) and display the five streams: color, depth, infra1, infra2, pointcloud.
 
-NOTE: in case PointCloud2 stream is not observed, try stop the "realsense_ros2_camera" and re-launch this node from console #4. This's a known issue and workaround is made (right fixing in ros1_bridge, details discussed in [ROS discourse](https://discourse.ros.org/t/ros1-bridge-failed-to-pass-tf-static-message-when-subscribed-from-rviz/3863)).
+**NOTE:** In case PointCloud2 stream is not observed, try stop the "realsense_ros2_camera" and re-launch this node from console #4. This's a known issue and workaround is made (right fixing in ros1_bridge, details discussed in [ROS discourse](https://discourse.ros.org/t/ros1-bridge-failed-to-pass-tf-static-message-when-subscribed-from-rviz/3863)).
 
-NOTE: visulization in ROS2 pending on [rviz2](https://github.com/ros2/rviz).
+**NOTE:** Visulization in ROS2 pending on [rviz2](https://github.com/ros2/rviz).
 
 ![realsense_ros2_camera visualization results](https://github.com/intel/ros2_intel_realsense/raw/master/realsense_ros2_camera/rviz/ros2_rviz.png "realsense_ros2_camera visualization results")
 
