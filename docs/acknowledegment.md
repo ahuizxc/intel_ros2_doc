@@ -24,4 +24,4 @@
 
 * Liu, Shenghui [shenghui.liu@intel.com]
 
-![Our Team](img/team.png "Our Team")
+![Our Team](https://github.com/ahuizxc/intel_ros2_doc/blob/master/docs/img/team.png "Our Team")
