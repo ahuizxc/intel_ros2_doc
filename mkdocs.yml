@@ -1,0 +1,7 @@
+site_name: Intel ROS2 Project Tutorial
+pages:
+- Home: Intel-Ros2-Project-Tutorial.md
+- Preparation: preparation.md
+- Installation: installation.md
+- Instruction: package_instruction.md
+theme: readthedocs
