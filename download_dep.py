@@ -1,9 +1,10 @@
-import yaml
+
 import pdb
 from urllib2 import urlopen
 import os
 os.system('sudo apt-get install -y python3-pip python-pip')
-ubuntu_version = 'xenial'
+import yaml
+ubuntu_version = 'bionic'
 os.system('sudo rm /tmp/base.yaml')
 os.system('sudo rm /tmp/python.yaml')
 os.system('sudo apt-get install wget')
@@ -12,7 +13,7 @@ os.system('wget https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ba
 print "Opening base.yaml"
 f = open('/tmp/base.yaml')
 print "Done!"
-skip_packages = ['libace-dev','cpuburn', 'console_bridge', 'fastcdr fastrtps', 'libopensplice67', 'rti-connext-dds-5.3.1', 'urdfdom_headers']
+skip_packages = ['texmaker','texlive-latex-recommended','texlive-latex-extra','texlive-latex-base','texlive-full','texlive-latex-full','texlive-fonts-recommended','texlive-fonts-extra','libphonon4', 'libphonon-dev', 'ace','cpuburn', 'libconsole-bridge-dev', 'console_bridge', 'fastcdr fastrtps', 'libopensplice67', 'rti-connext-dds-5.3.1', 'urdfdom_headers']
 f_shell = open('/tmp/base.sh','wb')
 x = yaml.load(f)
 apt_ = 'sudo apt-get install -y --no-install-recommends'
