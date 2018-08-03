@@ -35,7 +35,7 @@ for key, value in x.items():
 	    os.system(apt_+ ' '+ value2[0])
             #apt_context = apt_context +apt_+ " " + value2[0]+'\n'
 print "Opening python.yaml"   
-f2 = open("/tmp/python.yaml")
+'''f2 = open("/tmp/python.yaml")
 print "Done!"
 x = yaml.load(f2)
 pip_context = ''
@@ -74,8 +74,8 @@ for key, value in x.items():
 	            os.system(apt_ + ' ' + value2[0])
                     #apt_context = apt_context + " " + value2[0] 
     except:
-        pdb.set_trace()
+        pass
                 
                 
-os.system('rm /tmp/python.yaml\n')
+os.system('rm /tmp/python.yaml\n')'''
 os.system('rm /tmp/base.yaml\n')
