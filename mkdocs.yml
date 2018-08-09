@@ -4,6 +4,6 @@ pages:
 - Home: index.md
 - Preparation: preparation.md
 - Installation: installation.md
-- Instruction: package_instruction.md
+- Quick Start: package_instruction.md
 - Acknowledgement: acknowledegment.md
 theme: readthedocs

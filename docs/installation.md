@@ -6,7 +6,7 @@
 
 > **Note:** Use `git checkout v2.9.1` to switch to the v2.9.1 branch.
 
-## **Install ROS1 Kinetic**
+## **Install ROS1 Kinetic(Optional)**
 
 * [Ubuntu install of ROS Kinetic(**ros-kinetic-desktop-full**)](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
@@ -21,18 +21,47 @@ cd ~/ros2_ws
 source install/local_setup.bash
 ```
 
-## **Install [ros2 cv_bridge](https://github.com/ros-perception/vision_opencv/tree/ros2)**
+## **Install ROS2 Base Packages**
+
+### **1. Install [ros2 vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)**
 
 ```bash
+cd ~/ros2_ws
+source install/local_setup.bash
+
 # Creating a new ROS2 workspace 'ros2_overlay_ws' instead of using 'ros2_ws' is recommended
 mkdir -p ~/ros2_overlay_ws/src
-
 cd ~/ros2_overlay_ws/src
 git clone https://github.com/ros-perception/vision_opencv.git
 git checkout ros2
 cd ~/ros2_overlay_ws
 source ~/ros2_ws/install/local_setup.bash
 colcon build --symlink-install
+source ~/ros2_overlay_ws/install/local_setup.bash
+```
+### **2. Install [ros2_object_msgs](https://github.com/intel/ros2_object_msgs)**
+
+```bash
+cd ~/ros2_overlay_ws/src
+# Clone the ros2_object_msgs repository and build use colcon
+git clone https://github.com/intel/ros2_object_msgs.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select object_msgs
+source ~/ros2_overlay_ws/install/local_setup.bash
+```
+
+### **3. Install [ros2_message_filters](https://github.com/intel/ros2_message_filters)**
+
+```bash
+cd /usr/lib/x86_64-linux-gnu
+# Create a symbol link from libboost_python-py35.so to libboost_python3.so
+sudo ln -s libboost_python-py35.so libboost_python3.so
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_message_filters.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select message_filters
 source ~/ros2_overlay_ws/install/local_setup.bash
 ```
 
@@ -53,33 +82,7 @@ source ~/ros2_overlay_ws/install/local_setup.bash
 sudo ln -s /usr/lib/x86_64-linux-gnu/libusb-1.0.a /usr/lib/libusb.a
 ```
 
-### ** 2. Install [ros2_object_msgs](https://github.com/intel/ros2_object_msgs)**
-
-```bash
-cd ~/ros2_overlay_ws/src
-# Clone the ros2_object_msgs repository and build use colcon
-git clone https://github.com/intel/ros2_object_msgs.git
-cd ~/ros2_overlay_ws
-source ~/ros2_ws/install/local_setup.bash
-colcon build --symlink-install --packages-select object_msgs
-source ~/ros2_overlay_ws/install/local_setup.bash
-```
-
-### ** 3. Install [ros2_message_filters](https://github.com/intel/ros2_message_filters)**
-
-```bash
-cd /usr/lib/x86_64-linux-gnu
-# Create a symbol link from libboost_python-py35.so to libboost_python3.so
-sudo ln -s libboost_python-py35.so libboost_python3.so
-cd ~/ros2_overlay_ws/src
-git clone https://github.com/intel/ros2_message_filters.git
-cd ~/ros2_overlay_ws
-source ~/ros2_ws/install/local_setup.bash
-colcon build --symlink-install --packages-select message_filters
-source ~/ros2_overlay_ws/install/local_setup.bash
-```
-
-### ** 4. Install [ros2_intel_movidius_ncs](https://github.com/intel/ros2_intel_movidius_ncs)**
+### ** 2. Install [ros2_intel_movidius_ncs](https://github.com/intel/ros2_intel_movidius_ncs)**
 
 ```bash
 # Install [NCSDK 1.x](https://github.com/movidius/ncsdk) and [NCAPPZOO](https://github.com/movidius/ncappzoo) at first
@@ -110,7 +113,7 @@ colcon build --symlink-install --packages-select movidius_ncs_example  movidius_
 source ~/ros2_overlay_ws/install/local_setup.bash
 ```
 
-### ** 5. Install [ros2_object_analytics](https://github.com/intel/ros2_object_analytics)**
+### ** 3. Install [ros2_object_analytics](https://github.com/intel/ros2_object_analytics)**
 
 ```bash
 # Install pcl_conversions package at first
@@ -131,7 +134,7 @@ colcon build --symlink-install --packages-select object_analytics_launch  object
 source ~/ros2_overlay_ws/install/local.setup.bash
 ```
 
-### ** 6. Install [ros2_object_map](https://github.com/intel/ros2_object_map)**
+### ** 4. Install [ros2_object_map](https://github.com/intel/ros2_object_map)(Depends on ROS1)**
 
 ```bash
 cd ~/ros2_overlay_ws/src
@@ -142,7 +145,7 @@ colcon build --symlink-install --packages-select object_map object_map_msgs
 source ~/ros2_overlay_ws/install/local.setup.bash
 ```
 
-### ** 7. Install [ros2_moving_object](https://github.com/intel/ros2_moving_object)**
+### ** 5. Install [ros2_moving_object](https://github.com/intel/ros2_moving_object)(Depends on ROS1)**
 
 ```bash
 cd ~/ros2_overlay_ws/src

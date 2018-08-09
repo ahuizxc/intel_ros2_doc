@@ -10,14 +10,6 @@ Intel Ros2 Project contains several ROS2 packages in object classification, dete
 
 * ros2_intel_realsense for using Intel RealSense cameras (D400 series) with ROS2.
 
-### [ros2_message_filters](https://github.com/intel/ros2_message_filters)
-
-* ros2_message_filters blends various messages based on the conditions that filter needs to met and derives from ROS2 porting of ROS message_filters. It collects commonly used message "filtering" algorithms into a common space. A message filter is defined as something which a message arrives into and may or may not be spit back out of at a later point in time.
-
-### [ros2_object_msgs](https://github.com/intel/ros2_object_msgs)
-
-* ros2_object_msgs defines the object messages used by object detection for ROS2.
-
 ### [ros2_intel_movidius_ncs](https://github.com/intel/ros2_intel_movidius_ncs)
 
 * ros2_intel_movidius_ncs is a ROS2 wrapper for NC API of NCSDK, providing the following features:
