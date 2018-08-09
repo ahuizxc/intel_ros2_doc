@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation - Intel ROS2 Project Tutorial</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installation";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Intel ROS2 Project Tutorial</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../preparation/">Preparation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Installation</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#installation-instructions">Installation Instructions</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-the-intel-realsensetm-sdk-20">Install the Intel® RealSense™ SDK 2.0</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-ros1-kineticoptional">Install ROS1 Kinetic(Optional)</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-ros2-bouncy">Install ROS2 Bouncy</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-ros2-base-packages">Install ROS2 Base Packages</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-intel-ros2-packages">Install Intel ROS2 Packages</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../package_instruction/">Quick Start</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../acknowledegment/">Acknowledgement</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Intel ROS2 Project Tutorial</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Installation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installation-instructions">Installation Instructions</h1>
+<h2 id="install-the-intel-realsensetm-sdk-20"><strong> Install the Intel® RealSense™ SDK 2.0</strong></h2>
+<ul>
+<li>Install tag v2.9.1 <a href="https://github.com/IntelRealSense/librealsense/tree/v2.9.1">Intel&reg; RealSense&trade; SDK 2.0</a> and follow the instructions under <a href="https://github.com/IntelRealSense/librealsense/blob/v2.9.1/doc/installation.md">Linux Installation</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Use <code>git checkout v2.9.1</code> to switch to the v2.9.1 branch.</p>
+</blockquote>
+<h2 id="install-ros1-kineticoptional"><strong>Install ROS1 Kinetic(Optional)</strong></h2>
+<ul>
+<li><a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">Ubuntu install of ROS Kinetic(<strong>ros-kinetic-desktop-full</strong>)</a></li>
+</ul>
+<h2 id="install-ros2-bouncy"><strong>Install ROS2 Bouncy</strong></h2>
+<ul>
+<li><a href="https://github.com/ros2/ros2/wiki/Linux-Development-Setup">Ubuntu install of ROS Bouncy</a></li>
+</ul>
+<blockquote>
+<p><strong> Source the environment</strong></p>
+</blockquote>
+<pre><code class="bash">cd ~/ros2_ws
+source install/local_setup.bash
+</code></pre>
+
+<h2 id="install-ros2-base-packages"><strong>Install ROS2 Base Packages</strong></h2>
+<h3 id="1-install-ros2-vision_opencv"><strong>1. Install <a href="https://github.com/ros-perception/vision_opencv/tree/ros2">ros2 vision_opencv</a></strong></h3>
+<pre><code class="bash">cd ~/ros2_ws
+source install/local_setup.bash
+
+# Creating a new ROS2 workspace 'ros2_overlay_ws' instead of using 'ros2_ws' is recommended
+mkdir -p ~/ros2_overlay_ws/src
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/ros-perception/vision_opencv.git
+git checkout ros2
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="2-install-ros2_object_msgs"><strong>2. Install <a href="https://github.com/intel/ros2_object_msgs">ros2_object_msgs</a></strong></h3>
+<pre><code class="bash">cd ~/ros2_overlay_ws/src
+# Clone the ros2_object_msgs repository and build use colcon
+git clone https://github.com/intel/ros2_object_msgs.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select object_msgs
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="3-install-ros2_message_filters"><strong>3. Install <a href="https://github.com/intel/ros2_message_filters">ros2_message_filters</a></strong></h3>
+<pre><code class="bash">cd /usr/lib/x86_64-linux-gnu
+# Create a symbol link from libboost_python-py35.so to libboost_python3.so
+sudo ln -s libboost_python-py35.so libboost_python3.so
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_message_filters.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select message_filters
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h2 id="install-intel-ros2-packages">Install Intel ROS2 Packages</h2>
+<h3 id="1-install-ros2_intel_realsense"><strong> 1. Install <a href="https://github.com/intel/ros2_intel_realsense">ros2_intel_realsense</a></strong></h3>
+<pre><code class="bash"># Goto the new ROS workspace step 4 created before
+cd ~/ros2_overlay_ws/src
+# Clone the latest Intel® RealSense™ ROS2 repository and build use colcon
+git clone https://github.com/intel/ros2_intel_realsense.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select realsense_camera_msgs realsense_ros2_camera
+source ~/ros2_overlay_ws/install/local_setup.bash
+# Create a symbol link from libusb.a to libusb-1.0.a, otherwise &quot;libusb.a&quot; is probably not to be found by librealsense
+sudo ln -s /usr/lib/x86_64-linux-gnu/libusb-1.0.a /usr/lib/libusb.a
+</code></pre>
+
+<h3 id="2-install-ros2_intel_movidius_ncs"><strong> 2. Install <a href="https://github.com/intel/ros2_intel_movidius_ncs">ros2_intel_movidius_ncs</a></strong></h3>
+<pre><code class="bash"># Install [NCSDK 1.x](https://github.com/movidius/ncsdk) and [NCAPPZOO](https://github.com/movidius/ncappzoo) at first
+# create  workspace to install libraries ros2_intel_moidius_ncs relies on
+mkdir -p ~/workspace/libraries
+cd ~/workspace/libraries
+# install ncsdk and ncappzoo
+git clone https://github.com/movidius/ncsdk.git
+git clone https://github.com/movidius/ncappzoo.git
+cd ~/workspace/libraries/ncsdk
+sudo make install
+export PYTHONPATH=&quot;${PYTHONPATH}:/opt/movidius/caffe/python&quot;
+# Download and compile the object detection model
+cd ~/workspace/libraries/ncappzoo/caffe/
+sudo make
+cd ~/workspace/libraries/ncappzoo/tensorflow/
+sudo make
+# NCSDK should be installed in /opt/movidius by default. Create a symbol link in /opt/movidius to NCAPPZOO
+sudo ln -s ~/workspace/libraries/ncappzoo /opt/movidius/ncappzoo
+
+
+# Install ros2_intel_movidius_ncs
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_intel_movidius_ncs.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select movidius_ncs_example  movidius_ncs_image  movidius_ncs_launch  movidius_ncs_lib  movidius_ncs_stream
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="3-install-ros2_object_analytics"><strong> 3. Install <a href="https://github.com/intel/ros2_object_analytics">ros2_object_analytics</a></strong></h3>
+<pre><code class="bash"># Install pcl_conversions package at first
+cd ~/ros2_ws/src
+git clone https://github.com/ros2/pcl_conversions.git
+cd pcl_conversions
+git checkout bouncy
+cd ~/ros2_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select pcl_conversions
+
+# Install ros2_object_analytics
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_object_analytics.git
+cd ..
+source ~/ros2_ws/install/local_setup.bash 
+colcon build --symlink-install --packages-select object_analytics_launch  object_analytics_node object_analytics_msgs object_analytics_rviz
+source ~/ros2_overlay_ws/install/local.setup.bash
+</code></pre>
+
+<h3 id="4-install-ros2_object_mapdepends-on-ros1"><strong> 4. Install <a href="https://github.com/intel/ros2_object_map">ros2_object_map</a>(Depends on ROS1)</strong></h3>
+<pre><code class="bash">cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_object_map.git
+cd ..
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select object_map object_map_msgs
+source ~/ros2_overlay_ws/install/local.setup.bash
+</code></pre>
+
+<h3 id="5-install-ros2_moving_objectdepends-on-ros1"><strong> 5. Install <a href="https://github.com/intel/ros2_moving_object">ros2_moving_object</a>(Depends on ROS1)</strong></h3>
+<pre><code class="bash">cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_moving_object.git
+cd ..
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select moving_object moving_object_msgs
+source ~/ros2_overlay_ws/install/local.setup.bash
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../package_instruction/" class="btn btn-neutral float-right" title="Quick Start"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../preparation/" class="btn btn-neutral" title="Preparation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../preparation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../package_instruction/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

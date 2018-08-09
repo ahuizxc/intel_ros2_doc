@@ -11,9 +11,8 @@
 
 * [™ Neural Compute Stick](https://developer.movidius.com/)
 
-## ROS1(Optional), ROS2 and OpenCV 3.x
+## ROS2 and OpenCV 3.x
 
-* Install ROS1 kinetic([guide](wiki.ros.org/kinetic/Installation/Ubuntu))
 * Install ROS2 Bouncy ([guide](https://github.com/ros2/ros2/wiki/Linux-Install-Debians))
 * Install OpenCV 3.x([guide](https://docs.opencv.org/3.3.0/d7/d9f/tutorial_linux_install.html))
 

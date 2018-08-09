@@ -1,5 +1,7 @@
 # Installation Instructions
 
+
+
 ## ** Install the Intel® RealSense™ SDK 2.0**
 
 * Install tag v2.9.1 [Intel&reg; RealSense&trade; SDK 2.0](https://github.com/IntelRealSense/librealsense/tree/v2.9.1) and follow the instructions under [Linux Installation](https://github.com/IntelRealSense/librealsense/blob/v2.9.1/doc/installation.md).
@@ -134,7 +136,7 @@ colcon build --symlink-install --packages-select object_analytics_launch  object
 source ~/ros2_overlay_ws/install/local.setup.bash
 ```
 
-### ** 4. Install [ros2_object_map](https://github.com/intel/ros2_object_map)(Depends on ROS1)**
+### ** 4. Install [ros2_object_map](https://github.com/intel/ros2_object_map)**
 
 ```bash
 cd ~/ros2_overlay_ws/src
@@ -145,7 +147,7 @@ colcon build --symlink-install --packages-select object_map object_map_msgs
 source ~/ros2_overlay_ws/install/local.setup.bash
 ```
 
-### ** 5. Install [ros2_moving_object](https://github.com/intel/ros2_moving_object)(Depends on ROS1)**
+### ** 5. Install [ros2_moving_object](https://github.com/intel/ros2_moving_object)**
 
 ```bash
 cd ~/ros2_overlay_ws/src
