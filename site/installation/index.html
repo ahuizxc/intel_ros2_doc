@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Liu Shenghui">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Installation - Intel ROS2 Project Tutorial</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installation";
+    var mkdocs_page_input_path = "installation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Intel ROS2 Project Tutorial</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../preparation/">Preparation</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Installation</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#installation-instructions">Installation Instructions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#install-the-intel-realsensetm-sdk-20">Install the Intel® RealSense™ SDK 2.0</a></li>
+        
+            <li><a class="toctree-l3" href="#install-ros1-kineticoptional">Install ROS1 Kinetic(Optional)</a></li>
+        
+            <li><a class="toctree-l3" href="#install-ros2-bouncy">Install ROS2 Bouncy</a></li>
+        
+            <li><a class="toctree-l3" href="#install-ros2-base-packages">Install ROS2 Base Packages</a></li>
+        
+            <li><a class="toctree-l3" href="#install-intel-ros2-packages">Install Intel ROS2 Packages</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quickstart/">Quick Start</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../acknowledegment/">Acknowledgement</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Intel ROS2 Project Tutorial</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Installation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installation-instructions">Installation Instructions</h1>
+<h2 id="install-the-intel-realsensetm-sdk-20"><strong> Install the Intel® RealSense™ SDK 2.0</strong></h2>
+<ul>
+<li>Install tag v2.16.5_ros2 <a href="https://github.com/IntelRealSense/librealsense/tree/v2.16.5_ros2">Intel&reg; RealSense&trade; SDK 2.0</a> and follow the instructions under <a href="https://github.com/IntelRealSense/librealsense/blob/v2.9.1/doc/installation.md">Linux Installation</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Use <code>git checkout v2.16.5_ros2</code> to switch to the correct branch.</p>
+</blockquote>
+<h2 id="install-ros1-kineticoptional"><strong>Install ROS1 Kinetic(Optional)</strong></h2>
+<ul>
+<li><a href="http://wiki.ros.org/kinetic/Installation/Ubuntu">Ubuntu install of ROS Kinetic(<strong>ros-kinetic-desktop-full</strong>)</a></li>
+</ul>
+<h2 id="install-ros2-bouncy"><strong>Install ROS2 Bouncy</strong></h2>
+<ul>
+<li><a href="https://github.com/ros2/ros2/wiki/Linux-Development-Setup">Ubuntu install of ROS Crystal</a></li>
+</ul>
+<blockquote>
+<p><strong> Source the environment</strong></p>
+</blockquote>
+<pre><code class="bash">cd ~/ros2_ws
+source install/local_setup.bash
+</code></pre>
+
+<h2 id="install-ros2-base-packages"><strong>Install ROS2 Base Packages</strong></h2>
+<h3 id="1-install-ros2-vision_opencv"><strong>1. Install <a href="https://github.com/ros-perception/vision_opencv/tree/ros2">ros2 vision_opencv</a></strong></h3>
+<pre><code class="bash">cd ~/ros2_ws
+source install/local_setup.bash
+
+# Creating a new ROS2 workspace 'ros2_overlay_ws' instead of using 'ros2_ws' is recommended
+mkdir -p ~/ros2_overlay_ws/src
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/ros-perception/vision_opencv.git
+git checkout ros2
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="2-install-ros2_object_msgs"><strong>2. Install <a href="https://github.com/intel/ros2_object_msgs">ros2_object_msgs</a></strong></h3>
+<pre><code class="bash">cd ~/ros2_overlay_ws/src
+# Clone the ros2_object_msgs repository and build use colcon
+git clone https://github.com/intel/ros2_object_msgs.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select object_msgs
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="3-install-ros2_message_filters"><strong>3. Install <a href="https://github.com/intel/ros2_message_filters">ros2_message_filters</a></strong></h3>
+<pre><code class="bash">cd /usr/lib/x86_64-linux-gnu
+# Create a symbol link from libboost_python-py35.so to libboost_python3.so
+sudo ln -s libboost_python-py35.so libboost_python3.so
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_message_filters.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select message_filters
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h2 id="install-intel-ros2-packages">Install Intel ROS2 Packages</h2>
+<h3 id="1-install-ros2_intel_realsense"><strong> 1. Install <a href="https://github.com/intel/ros2_intel_realsense">ros2_intel_realsense</a></strong></h3>
+<pre><code class="bash"># Goto the new ROS workspace step 4 created before
+cd ~/ros2_overlay_ws/src
+# Clone the latest Intel® RealSense™ ROS2 repository and build use colcon
+git clone https://github.com/intel/ros2_intel_realsense.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select realsense_camera_msgs realsense_ros2_camera
+source ~/ros2_overlay_ws/install/local_setup.bash
+# Create a symbol link from libusb.a to libusb-1.0.a, otherwise &quot;libusb.a&quot; is probably not to be found by librealsense
+sudo ln -s /usr/lib/x86_64-linux-gnu/libusb-1.0.a /usr/lib/libusb.a
+</code></pre>
+
+<h3 id="2-install-ros2_intel_movidius_ncs"><strong> 2. Install <a href="https://github.com/intel/ros2_intel_movidius_ncs">ros2_intel_movidius_ncs</a></strong></h3>
+<pre><code class="bash"># Install [NCSDK 1.x](https://github.com/movidius/ncsdk) and [NCAPPZOO](https://github.com/movidius/ncappzoo) at first
+# create  workspace to install libraries ros2_intel_moidius_ncs relies on
+mkdir -p ~/workspace/libraries
+cd ~/workspace/libraries
+# install ncsdk and ncappzoo
+git clone https://github.com/movidius/ncsdk.git
+git clone https://github.com/movidius/ncappzoo.git
+cd ~/workspace/libraries/ncsdk
+sudo make install
+export PYTHONPATH=&quot;${PYTHONPATH}:/opt/movidius/caffe/python&quot;
+# Download and compile the object detection model
+cd ~/workspace/libraries/ncappzoo/caffe/
+sudo make
+cd ~/workspace/libraries/ncappzoo/tensorflow/
+sudo make
+# NCSDK should be installed in /opt/movidius by default. Create a symbol link in /opt/movidius to NCAPPZOO
+sudo ln -s ~/workspace/libraries/ncappzoo /opt/movidius/ncappzoo
+
+
+# Install ros2_intel_movidius_ncs
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_intel_movidius_ncs.git
+cd ~/ros2_overlay_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select movidius_ncs_example  movidius_ncs_image  movidius_ncs_launch  movidius_ncs_lib  movidius_ncs_stream
+source ~/ros2_overlay_ws/install/local_setup.bash
+</code></pre>
+
+<h3 id="3-install-ros2_object_analytics"><strong> 3. Install <a href="https://github.com/intel/ros2_object_analytics">ros2_object_analytics</a></strong></h3>
+<pre><code class="bash"># Install pcl_conversions package at first
+cd ~/ros2_ws/src
+git clone https://github.com/ros2/pcl_conversions.git
+cd pcl_conversions
+git checkout bouncy
+cd ~/ros2_ws
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select pcl_conversions
+
+# Install ros2_object_analytics
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_object_analytics.git
+cd ..
+source ~/ros2_ws/install/local_setup.bash 
+colcon build --symlink-install --packages-select object_analytics_launch  object_analytics_node object_analytics_msgs object_analytics_rviz
+source ~/ros2_overlay_ws/install/local.setup.bash
+</code></pre>
+
+<h3 id="4-install-ros2_object_map"><strong> 4. Install <a href="https://github.com/intel/ros2_object_map">ros2_object_map</a></strong></h3>
+<pre><code class="bash">cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_object_map.git
+cd ..
+source ~/ros2_ws/install/local_setup.bash
+colcon build --symlink-install --packages-select object_map object_map_msgs
+source ~/ros2_overlay_ws/install/local.setup.bash
+</code></pre>
+
+<h3 id="5-install-ros2_openvino_toolkit"><strong> 5. Install <a href="https://github.com/intel/ros2_openvino_toolkit">ros2_openvino_toolkit</a></strong></h3>
+<h4 id="hardware-and-system-requirements">Hardware and system requirements:</h4>
+<ul>
+<li>An x86_64 computer running Ubuntu. Below processors are supported:<ul>
+<li>6th-8th Generation Intel® Core™</li>
+<li>Intel® Xeon® v5 family</li>
+<li>Intel®  Xeon® v6 family</li>
+</ul>
+</li>
+<li>ROS2 <a href="https://github.com/ros2/ros2/wiki">Crystal</a></li>
+<li>RGB Camera, e.g. RealSense D400 Series or standard USB camera or Video/Image File</li>
+<li>
+<p>Graphics are required only if you use a GPU. The official system requirements for GPU are:</p>
+<ul>
+<li>6th to 8th generation Intel® Core™ processors with Iris® Pro graphics and Intel® HD Graphics</li>
+<li>6th to 8th generation Intel® Xeon® processors with Iris Pro graphics and Intel HD Graphics (excluding the e5 product family, which does not have graphics)</li>
+<li>Intel® Pentium® processors N4200/5, N3350/5, N3450/5 with Intel HD Graphics</li>
+</ul>
+</li>
+<li>
+<p>Use one of the following methods to determine the GPU on your hardware:</p>
+<ul>
+<li>[lspci] command: GPU info may lie in the [VGA compatible controller] line.</li>
+<li>Ubuntu system: Menu [System Settings] --&gt; [Details] may help you find the graphics information.</li>
+<li>Openvino: Download the install package, install_GUI.sh inside will check the GPU information before installation.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong>:We provide two ways to install the OpenVINO™ toolkit:<br></p>
+<h3 id="install-from-binary-versiononly-support-ubuntu-1604">Install from Binary version(Only support ubuntu 16.04)</h3>
+<details>
+<h3 id="environment-setup">Environment Setup:</h3>
+<ul>
+<li>
+<p>Install <a href="https://software.intel.com/en-us/openvino-toolkit">OpenVINO™ Toolkit</a> (<a href="https://software.intel.com/en-us/articles/OpenVINO-Install-Linux">guide</a>)<br>
+        <strong>Note</strong>: Please use  <em>root privileges</em> to run the installer when installing the core components.</p>
+</li>
+<li>
+<p>Install OpenCL Driver for GPU</p>
+</li>
+</ul>
+<pre><code class="bash">cd /opt/intel/computer_vision_sdk/install_dependencies
+sudo ./install_NEO_OCL_driver.sh
+</code></pre>
+
+<ul>
+<li>Other Dependencies</li>
+</ul>
+<pre><code class="bash"># numpy
+pip3 install numpy
+# libboost
+sudo apt-get install -y --no-install-recommends libboost-all-dev
+cd /usr/lib/x86_64-linux-gnu
+sudo ln -s libboost_python-py35.so libboost_python3.so
+</code></pre>
+
+<h3 id="building-and-installation">Building and Installation:</h3>
+<p><strong>Note</strong>:You can also choose to follow the steps below to build the environment step by step.</p>
+<ul>
+<li>Build sample code under openvino toolkit</li>
+</ul>
+<pre><code class="bash"># root is required instead of sudo
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/
+mkdir build
+cd build
+cmake ..
+make
+</code></pre>
+
+<ul>
+<li>set ENV CPU_EXTENSION_LIB and GFLAGS_LIB</li>
+</ul>
+<pre><code class="bash">export CPU_EXTENSION_LIB=/opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/build/intel64/Release/lib/libcpu_extension.so
+export GFLAGS_LIB=/opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/build/intel64/Release/lib/libgflags_nothreads.a
+</code></pre>
+
+<ul>
+<li>Install ROS2_OpenVINO package</li>
+</ul>
+<pre><code class="bash">mkdir -p ~/ros2_overlay_ws/src
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_openvino_toolkit
+</code></pre>
+
+<ul>
+<li>Build package</li>
+</ul>
+<pre><code class="bash">source ~/ros2_ws/install/local_setup.bash
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+cd ~/ros2_overlay_ws
+colcon build --symlink-install
+source ./install/local_setup.bash
+sudo mkdir -p /opt/openvino_toolkit
+sudo ln -s ~/ros2_overlay_ws/src/ros2_openvino_toolkit /opt/openvino_toolkit/ros2_openvino_toolkit
+</code></pre>
+
+<ul>
+<li>Build sample code under openvino toolkit</li>
+</ul>
+<pre><code class="bash"># root is required instead of sudo
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+cd /opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/
+mkdir build
+cd build
+cmake ..
+make
+</code></pre>
+
+<ul>
+<li>set ENV CPU_EXTENSION_LIB and GFLAGS_LIB</li>
+</ul>
+<pre><code class="bash">export CPU_EXTENSION_LIB=/opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/build/intel64/Release/lib/libcpu_extension.so- [OpenVINO™ Toolkit](https://software.intel.com/en-us/openvino-toolkit)
+export GFLAGS_LIB=/opt/intel/computer_vision_sdk/deployment_tools/inference_engine/samples/build/intel64/Release/lib/libgflags_nothreads.a
+</code></pre>
+
+<ul>
+<li>Install ROS2_OpenVINO packages</li>
+</ul>
+<pre><code class="bash">mkdir -p ~/ros2_overlay_ws/src
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_openvino_toolkit
+</code></pre>
+
+<ul>
+<li>Build package</li>
+</ul>
+<pre><code class="bash">source ~/ros2_ws/install/local_setup.bash
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+cd ~/ros2_overlay_ws
+colcon build --symlink-install
+source ./install/local_setup.bash
+sudo mkdir -p /opt/openvino_toolkit
+sudo ln -s ~/ros2_overlay_ws/src/ros2_openvino_toolkit /opt/openvino_toolkit/ros2_openvino_toolkit
+</code></pre>
+</details>
+<h3 id="install-from-source-codeboth-support-ubuntu-1604-and-1804">Install from Source code(Both support ubuntu 16.04 and 18.04)</h3>
+<details>
+<h3 id="environment-setup_1">Environment Setup</h3>
+<p><strong>Note</strong>:You can choose to build the environment using <em>./environment_setup.sh</em> script in the script subfolder.</p>
+<pre><code class="bash">./environment_setup.sh hostname password
+</code></pre>
+
+<p><strong>Note</strong>:You can also choose to follow the steps below to build the environment step by step.</p>
+<ul>
+<li>
+<p>Install OpenVINO™ Toolkit Open Source<br></p>
+<ul>
+<li>
+<p>Install <a href="https://docs.opencv.org/master/d9/df8/tutorial_root.html">OpenCV 3.3 or later</a>(<a href="https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html">guide</a>)</p>
+<p><code>[compiler] sudo apt-get install build-essential
+[required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+[optional] sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev 
+cd ~/code
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv &amp;&amp; git checkout 3.3.1 &amp;&amp; cd ..
+cd opencv_contrib &amp;&amp; git checkout 3.3.1 &amp;&amp; cd ..
+cd opencv
+mkdir build &amp;&amp; cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/home/&lt;hostname&gt;/code/opencv_contrib/modules/ ..
+make -j8
+sudo make install</code></p>
+<ul>
+<li>
+<p>Additional steps are required on ubuntu 18.04</p>
+<p><code>sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+sudo apt update
+sudo apt install libjasper1 libjasper-dev</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Install OpenCL Driver for GPU(<a href="http://registrationcenter-download.intel.com/akdlm/irc_nas/11396/intel-opencl-4.1-installation.pdf">guide</a>)<br></p>
+<p><code>cd ~/Downloads
+wget http://registrationcenter-download.intel.com/akdlm/irc_nas/11396/SRB5.0_linux64.zip
+unzip SRB5.0_linux64.zip -d SRB5.0_linux64
+cd SRB5.0_linux64
+sudo apt-get install xz-utils
+mkdir intel-opencl
+tar -C intel-opencl -Jxf intel-opencl-r5.0-63503.x86_64.tar.xz
+tar -C intel-opencl -Jxf intel-opencl-devel-r5.0-63503.x86_64.tar.xz
+tar -C intel-opencl -Jxf intel-opencl-cpu-r5.0-63503.x86_64.tar.xz
+sudo cp -R intel-opencl/* /
+sudo ldconfig</code></p>
+</li>
+</ul>
+<p><strong>Note</strong>:On Ubuntu 18.04,replace libpng12-dev with libpng-dev in the <em>install_dependencies.sh</em> file.</p>
+<ul>
+<li>
+<p>Install <a href="https://github.com/opencv/dldt">Deep Learning Deployment Toolkit</a>(<a href="https://github.com/opencv/dldt/tree/2018/inference-engine">guide</a>)<br></p>
+<p><code>mkdir ~/code &amp;&amp; cd ~/code
+git clone https://github.com/opencv/dldt.git
+cd dldt/inference-engine/
+git checkout 2018_R3
+./install_dependencies.sh
+mkdir build &amp;&amp; cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j8
+sudo mkdir -p /opt/openvino_toolkit
+sudo ln -s ~/code/dldt /opt/openvino_toolkit/dldt</code></p>
+</li>
+<li>
+<p>Install <a href="https://github.com/opencv/open_model_zoo">Open Model Zoo</a>(<a href="https://github.com/opencv/open_model_zoo/tree/2018/demos">guide</a>)<br></p>
+<p><code>cd ~/code
+git clone https://github.com/opencv/open_model_zoo.git
+cd open_model_zoo/demos/
+git checkout e238a1ac6bfacf133be223dd9debade7bfcf7dc5
+mkdir build &amp;&amp; cd build
+cmake -DCMAKE_BUILD_TYPE=Release /opt/openvino_toolkit/dldt/inference-engine
+make -j8
+sudo mkdir -p /opt/openvino_toolkit
+sudo ln -s ~/code/open_model_zoo /opt/openvino_toolkit/open_model_zoo</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Other Dependencies</p>
+</li>
+</ul>
+<pre><code class="bash"># numpy
+pip3 install numpy
+</code></pre>
+
+<ul>
+<li>Ubuntu 16.04</li>
+</ul>
+<pre><code class="bash"># libboost
+sudo apt-get install -y --no-install-recommends libboost-all-dev
+cd /usr/lib/x86_64-linux-gnu
+sudo ln -s libboost_python-py35.so libboost_python3.so
+</code></pre>
+
+<ul>
+<li>Ubuntu 18.04</li>
+</ul>
+<pre><code class="bash">#libboost
+sudo apt-get install -y --no-install-recommends libboost-all-dev
+sudo apt install libboost-python1.62.0
+</code></pre>
+
+<h3 id="building-and-installation_1">Building and Installation</h3>
+<ul>
+<li>set ENV InferenceEngine_DIR, CPU_EXTENSION_LIB and GFLAGS_LIB</li>
+</ul>
+<pre><code class="bash">export InferenceEngine_DIR=/opt/openvino_toolkit/dldt/inference-engine/build/
+export CPU_EXTENSION_LIB=/opt/openvino_toolkit/dldt/inference-engine/bin/intel64/Release/lib/libcpu_extension.so
+export GFLAGS_LIB=/opt/openvino_toolkit/dldt/inference-engine/bin/intel64/Release/lib/libgflags_nothreads.a
+</code></pre>
+
+<ul>
+<li>Install ROS2_OpenVINO packages</li>
+</ul>
+<pre><code class="bash">mkdir -p ~/ros2_overlay_ws/src
+cd ~/ros2_overlay_ws/src
+git clone https://github.com/intel/ros2_openvino_toolkit
+</code></pre>
+
+<ul>
+<li>Build package</li>
+</ul>
+<pre><code class="bash">source ~/ros2_ws/install/local_setup.bash
+cd ~/ros2_overlay_ws
+colcon build --symlink-install
+source ./install/local_setup.bash
+sudo mkdir -p /opt/openvino_toolkit
+sudo ln -s ~/ros2_overlay_ws/src/ros2_openvino_toolkit /opt/openvino_toolkit/ros2_openvino_toolkit
+</code></pre>
+
+<p><strong>Note</strong>:In <a href="https://github.com/intel/ros2_openvino_toolkit/blob/master/sample/param/pipeline_people_oss.yaml">pipeline_people_oss.yaml</a> and <a href="https://github.com/intel/ros2_openvino_toolkit/blob/master/sample/param/pipeline_object_oss.yaml">pipeline_object_oss.yaml</a>,options for inputs parameter: StandardCamera or RealSenseCamera. Default is StandardCamera.
+* run sample code with parameters extracted from <a href="https://github.com/intel/ros2_openvino_toolkit/blob/master/sample/param/pipeline_people_oss.yaml">yaml</a>.</p>
+<pre><code class="bash">ros2 run dynamic_vino_sample pipeline_with_params -config /opt/openvino_toolkit/ros2_openvino_toolkit/sample/param/pipeline_people_oss.yaml
+</code></pre>
+
+<ul>
+<li>run object detection sample code with paramters extracted from <a href="https://github.com/intel/ros2_openvino_toolkit/blob/master/sample/param/pipeline_object_oss.yaml">yaml</a>.</li>
+</ul>
+<pre><code class="bash">ros2 run dynamic_vino_sample pipeline_with_params -config /opt/openvino_toolkit/ros2_openvino_toolkit/sample/param/pipeline_object_oss.yaml
+</code></pre></details>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../quickstart/" class="btn btn-neutral float-right" title="Quick Start">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../preparation/" class="btn btn-neutral" title="Preparation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDSource codeocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../preparation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
