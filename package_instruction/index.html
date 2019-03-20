@@ -69,8 +69,6 @@
         
             <li><a class="toctree-l3" href="#ros2_intel_realsense">ros2_intel_realsense</a></li>
         
-            <li><a class="toctree-l3" href="#ros2_intel_movidius_ncs">ros2_intel_movidius_ncs</a></li>
-        
             <li><a class="toctree-l3" href="#ros2_object_analytic">ros2_object_analytic</a></li>
         
             <li><a class="toctree-l3" href="#ros2_openvino_toolkit">ros2_openvino_toolkit</a></li>
@@ -165,141 +163,15 @@ $ rviz2
 <p>Preset/Controls</p>
 </li>
 </ul>
-<h2 id="ros2_intel_movidius_ncs"><a href="https://github.com/intel/ros2_intel_movidius_ncs">ros2_intel_movidius_ncs</a></h2>
-<h3 id="1-overview_1">1 Overview</h3>
-<p>The Movidius™ Neural Compute Stick (<a href="https://developer.movidius.com/">NCS</a>) is a tiny fanless deep learning device that you can use to learn AI programming at the edge. NCS is powered by the same low power high performance Movidius™ Vision Processing Unit (<a href="https://www.movidius.com/solutions/vision-processing-unit">VPU</a>) that can be found in millions of smart security cameras, gesture controlled drones, industrial machine vision equipment, and more.  </p>
-<p>This project is a ROS2 wrapper for NC API of <a href="https://movidius.github.io/ncsdk/">NCSDK</a>, providing the following features:</p>
-<ul>
-<li>
-<p>A ROS2 service for object classification and detection of a static image file</p>
-</li>
-<li>
-<p>A ROS2 publisher for object classification and detection of a video stream from a RGB camera</p>
-</li>
-<li>
-<p>Demo applications to show the capabilities of ROS2 service and publisher</p>
-</li>
-<li>
-<p>Support multiple CNN models of Caffe and Tensorflow</p>
-</li>
-</ul>
-<h3 id="2-running-the-demo_1">2 Running the Demo</h3>
-<h4 id="21-classification">2.1 Classification</h4>
-<h5 id="211-supported-cnn-models">2.1.1 Supported CNN Models</h5>
-<h6 id="table1"># <em>Table1</em></h6>
-<table>
-<thead>
-<tr>
-<th align="left">CNN Model</th>
-<th align="left">Framework</th>
-<th align="left">Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">AlexNet</td>
-<td align="left">Caffe</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#alexnet">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#alexnet">Video</a></td>
-</tr>
-<tr>
-<td align="left">GoogLeNet</td>
-<td align="left">Caffe</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#googlenet">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#googlenet">Video</a></td>
-</tr>
-<tr>
-<td align="left">SqueezeNet</td>
-<td align="left">Caffe</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#squeezenet">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#squeezenet">Video</a></td>
-</tr>
-<tr>
-<td align="left">Inception_v1</td>
-<td align="left">Tensorflow</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#inception_v1">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#inception_v1">Video</a></td>
-</tr>
-<tr>
-<td align="left">Inception_v2</td>
-<td align="left">Tensorflow</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#inception_v2">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#inception_v2">Video</a></td>
-</tr>
-<tr>
-<td align="left">Inception_v3</td>
-<td align="left">Tensorflow</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#inception_v3">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#inception_v3">Video</a></td>
-</tr>
-<tr>
-<td align="left">Inception_v4</td>
-<td align="left">Tensorflow</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#inception_v4">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#inception_v4">Video</a></td>
-</tr>
-<tr>
-<td align="left">MobileNet</td>
-<td align="left">Tensorflow</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md#mobilenet">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md#mobilenet">Video</a></td>
-</tr>
-</tbody>
-</table>
-<h5 id="212-classification-result-with-googlenet">2.1.2 Classification Result with GoogLeNet</h5>
-<p><img alt="classification with googlenet" src="https://s8.postimg.cc/8z4mhltsl/googlenet_dog.png&quot;classification" title="with googlenet&quot;" /></p>
-<h5 id="213-running-the-demo">2.1.3 Running the Demo</h5>
-<ul>
-<li><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_classification.md">Static Image</a></li>
-<li><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_classification.md">Video Streaming</a></li>
-</ul>
-<h4 id="22-detection">2.2 Detection</h4>
-<h5 id="221-supported-cnn-models">2.2.1 Supported CNN Models</h5>
-<table>
-<thead>
-<tr>
-<th align="left">CNN Model</th>
-<th align="left">Framework</th>
-<th align="left">Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">MobileNetSSD(Recommended)</td>
-<td align="left">Caffe</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_detection.md#mobilenet_ssd">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_detection.md#mobilenet_ssd">Video</a></td>
-</tr>
-<tr>
-<td align="left">TinyYolo_v1</td>
-<td align="left">Caffe</td>
-<td align="left"><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_detection.md#tinyyolo_v1">Image</a>/<a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_detection.md#tinyyolo_v1">Video</a></td>
-</tr>
-</tbody>
-</table>
-<h5 id="222-detection-result-with-mobilenetssd">2.2.2 Detection Result with MobileNetSSD</h5>
-<p><img alt="detection with mobilenetssd" src="https://s8.postimg.cc/lqiso3o51/mobilenetssd_car_bicycle.png" title="detection with mobilenetssd" /></p>
-<h5 id="223-running-the-demo">2.2.3 Running the Demo</h5>
-<ul>
-<li><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/image_detection.md">Static Image</a></li>
-<li><a href="https://github.com/intel/ros2_intel_movidius_ncs/blob/master/doc/video_detection.md">Video Streaming</a></li>
-</ul>
-<h3 id="3-interfaces_1">3 Interfaces</h3>
-<h4 id="31-topic">3.1 Topic</h4>
-<p>Classification: <code>/movidius_ncs_nodelet/classified_objects</code><br />
-Detection: <code>/movidius_ncs_nodelet/detected_objects</code></p>
-<h4 id="32-service">3.2 Service</h4>
-<p>Classification: <code>/movidius_ncs_image/classify_object</code><br />
-Detection: <code>/movidius_ncs_image/detect_object</code></p>
-<h3 id="4-known-issues_1">4 Known Issues</h3>
-<ul>
-<li>Only absolute path of image file supported in image inference demo</li>
-<li>Only test on RealSense D400 series camera</li>
-</ul>
-<h3 id="5-todo_1">5 TODO</h3>
-<ul>
-<li>Keep synchronized with <a href="https://github.com/intel/ros_intel_movidius_ncs/tree/master">ROS NCS Package</a></li>
-</ul>
 <h2 id="ros2_object_analytic"><a href="https://github.com/intel/ros2_object_analytics">ros2_object_analytic</a></h2>
-<h3 id="1-overview_2">1 Overview</h3>
+<h3 id="1-overview_1">1 Overview</h3>
 <p>Object Analytics (OA) is ROS2 wrapper for realtime object detection, localization and tracking.
 These packages aim to provide real-time object analyses over RGB-D camera inputs, enabling ROS developer to easily create amazing robotics advanced features, like intelligent collision avoidance and semantic SLAM. It consumes <a href="http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html">sensor_msgs::PointClould2</a> data delivered by RGB-D camera, publishing topics on <a href="https://github.com/intel/ros2_object_msgs">object detection</a>, <a href="https://github.com/intel/ros2_object_analytics/tree/master/object_analytics_msgs">object tracking</a>, and <a href="https://github.com/intel/ros2_object_analytics/object_analytics_msgs">object localization</a> in 3D camera coordination system.</p>
 <p>OA keeps integrating with various "state-of-the-art" algorithms.</p>
 <ul>
 <li>Object detection offload to VPU, Intel Movidius NCS, with MobileNet SSD model and Caffe framework.</li>
 </ul>
-<h3 id="2-running-the-demo_2">2 Running the demo</h3>
+<h3 id="2-running-the-demo_1">2 Running the demo</h3>
 <h4 id="step-1-in-terminal-1-launch-realsense-camera-node">Step 1. <em>[In terminal 1]</em> Launch Realsense camera node</h4>
 <pre><code class="bash"># Terminal 1:
 . &lt;install-space-with-realsense-ros2-camera&gt;/local_setup.bash
@@ -320,7 +192,7 @@ launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/l
 </code></pre>
 
 <p><img alt="view result at rviz2" src="https://s8.postimg.cc/sjj5jwwth/object_analytics.png" title="view result at rviz2" /></p>
-<h3 id="3-interfaces_2">3 Interfaces</h3>
+<h3 id="3-interfaces_1">3 Interfaces</h3>
 <h4 id="31-subscribed-topics">3.1 Subscribed topics</h4>
 <p>/movidius_ncs_stream/detected_objects (<a href="https://github.com/intel/ros2_object_msgs/blob/master/msg/ObjectsInBoxes.msg">object_msgs::msg::ObjectsInBoxes</a>)</p>
 <h4 id="32-published-topics">3.2 Published topics</h4>
@@ -330,18 +202,18 @@ launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/l
 <p>/object_analytics/tracking (<a href="https://github.com/intel/ros2_object_analytics/blob/master/object_analytics_msgs/msg/TrackedObjects.msg">object_analytics_msgs::msg::TrackedObjects</a>)</p>
 <h3 id="33-customize-launch">3.3 Customize launch</h3>
 <p>By default, object analytics will launch both tracking and localization features, but either tracking or localization or both can be dropped. Detailed please refer comments embedded in launch file.</p>
-<h3 id="4-known-issues_2">4 Known issues</h3>
+<h3 id="4-known-issues_1">4 Known issues</h3>
 <p>--</p>
-<h3 id="5-todo_2">5 TODO</h3>
+<h3 id="5-todo_1">5 TODO</h3>
 <p>-</p>
 <h2 id="ros2_openvino_toolkit"><a href="https://github.com/intel/ros2_openvino_toolkit">ros2_openvino_toolkit</a></h2>
-<h3 id="1-overview_3">1. Overview</h3>
+<h3 id="1-overview_2">1. Overview</h3>
 <p>The OpenVINO™ (Open visual inference and neural network optimization) toolkit provides a ROS-adaptered runtime framework of neural network which quickly deploys applications and solutions for vision inference. By leveraging Intel® OpenVINO™ toolkit and corresponding libraries, this runtime framework extends  workloads across Intel® hardware (including accelerators) and maximizes performance.
 <em> Enables CNN-based deep learning inference at the edge
 </em> Supports heterogeneous execution across computer vision accelerators—CPU, GPU, Intel® Movidius™ Neural Compute Stick, and FPGA—using a common API
 <em> Speeds up time to market via a library of functions and preoptimized kernels
 </em> Includes optimized calls for OpenCV and OpenVX*</p>
-<h3 id="2-running-the-demo_3">2. Running the demo</h3>
+<h3 id="2-running-the-demo_2">2. Running the demo</h3>
 <ul>
 <li>run face detection sample code input from StandardCamera.</li>
 </ul>
@@ -389,7 +261,7 @@ launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/l
 <pre><code class="bash">ros2 run dynamic_vino_sample image_object_client ~/Pictures/car.png
 </code></pre>
 
-<h3 id="3-interfaces_3">3. Interfaces</h3>
+<h3 id="3-interfaces_2">3. Interfaces</h3>
 <h4 id="subscribed-topic">Subscribed Topic</h4>
 <ul>
 <li>Image topic:
@@ -443,18 +315,18 @@ launch `ros2 pkg prefix object_analytics_launch`/share/object_analytics_launch/l
 <img alt="person_reidentification_demo_video" src="https://github.com/intel/ros2_openvino_toolkit/blob/devel/data/images/person-reidentification.gif?raw=ture" title="person reidentification demo video" /></p>
 </li>
 </ul>
-<h3 id="4-known-issues_3">4. Known issues</h3>
+<h3 id="4-known-issues_2">4. Known issues</h3>
 <p>--</p>
-<h3 id="5-todo_3">5. TODO</h3>
+<h3 id="5-todo_2">5. TODO</h3>
 <ul>
 <li>Support <strong>result filtering</strong> for inference process, so that the inference results can be filtered to different subsidiary inference. For example, given an image, firstly we do Object Detection on it, secondly we pass cars to vehicle brand recognition and pass license plate to license number recognition.</li>
 <li>Design <strong>resource manager</strong> to better use such resources as models, engines, and other external plugins.</li>
 <li>Develop GUI based <strong>configuration and management tools</strong> (and monitoring and diagnose tools), in order to provide easy entry for end users to simplify their operation. </li>
 </ul>
 <h2 id="navigation2"><a href="https://github.com/ros-planning/navigation2">navigation2</a></h2>
-<h3 id="1-overview_4">1. Overview</h3>
+<h3 id="1-overview_3">1. Overview</h3>
 <p>The ROS 2 Navigation System is the control system that enables a robot to autonomously reach a goal state, such as a specific position and orientation relative to a specific map. Given a current pose, a map, and a goal, such as a destination pose, the navigation system generates a plan to reach the goal, and outputs commands to autonomously drive the robot, respecting any safety constraints and avoiding obstacles encountered along the way.</p>
-<h3 id="2-running-the-demo_4">2. Running the demo</h3>
+<h3 id="2-running-the-demo_3">2. Running the demo</h3>
 <p>The <code>nav2_bringup</code> package is an example bringup system for navigation2 applications.</p>
 <p>Notes: (December 2018, Crystal Release)
 <em> We recommend doing this on a Ubuntu 18.04 installation. We’re currently having build issues on 16.04. (see https://github.com/ros-planning/navigation2/issues/353)
@@ -541,8 +413,8 @@ ros2 param set /world_model use_sim_time True; ros2 param set /global_costmap/gl
 </ul>
 <h3 id="4-todo">4. TODO</h3>
 <ul>
-<li>adding configuration files for the example bringup</li>
-<li>a more complete map for system level testing</li>
+<li>Add configuration files for the example bringup</li>
+<li>Support a more complete map for system level testing</li>
 </ul>
               
             </div>
