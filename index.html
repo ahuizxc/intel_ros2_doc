@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="None">
-  <meta name="author" content="Liu Shenghui">
+  <meta name="author" content="liu, shenghui">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Home - Intel ROS2 Project Tutorial</title>
+  <title>Home - Intel Robot SDK Tutorial</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Intel ROS2 Project Tutorial</a>
+        <a href="." class="icon icon-home"> Intel Robot SDK Tutorial</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -53,15 +53,29 @@
     <a class="current" href=".">Home</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#intel-ros2-project-tutorial">Intel Ros2 Project Tutorial</a></li>
+    <li class="toctree-l2"><a href="#overview">Overview</a></li>
+    
+
+    <li class="toctree-l2"><a href="#package-lists">Package Lists</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#overview">Overview</a></li>
+            <li><a class="toctree-l3" href="#ros2_intel_realsense">ros2_intel_realsense</a></li>
         
-            <li><a class="toctree-l3" href="#package-lists">Package Lists</a></li>
+            <li><a class="toctree-l3" href="#ros2_object_analytics">ros2_object_analytics</a></li>
         
-            <li><a class="toctree-l3" href="#license">License</a></li>
+            <li><a class="toctree-l3" href="#ros2_openvino_toolkit">ros2_openvino_toolkit</a></li>
+        
+            <li><a class="toctree-l3" href="#navigation2">navigation2</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#license">License</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#any-security-issue-should-be-reported-using-process-at-https01orgsecurity">Any security issue should be reported using process at https://01.org/security</a></li>
         
         </ul>
     
@@ -89,7 +103,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Intel ROS2 Project Tutorial</a>
+        <a href=".">Intel Robot SDK Tutorial</a>
       </nav>
 
       
@@ -111,10 +125,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="intel-ros2-project-tutorial">Intel Ros2 Project Tutorial</h1>
-<h2 id="overview">Overview</h2>
-<p>Intel Ros2 Project contains several ROS2 packages in object classification, detection, localization, tracking, SLAM and navigation.</p>
-<h2 id="package-lists">Package Lists</h2>
+                <h1 id="overview">Overview</h1>
+<p>Intel Robot SDK Project contains robotics related open source software components under ROS2 framework for realsense based perceptual computation, neuron network based object and people face detection, object tracking and 3D localization, SLAM and navigation.</p>
+<h1 id="package-lists">Package Lists</h1>
 <h3 id="ros2_intel_realsense"><a href="https://github.com/intel/ros2_intel_realsense">ros2_intel_realsense</a></h3>
 <ul>
 <li>ros2_intel_realsense for using Intel RealSense cameras (D400 series) with ROS2.</li>
@@ -123,7 +136,7 @@
 <ul>
 <li>ros2_object_analytics is a ROS2 wrapper for realtime object detection, localization and tracking. These packages aim to provide real-time object analyses over RGB-D camera inputs, enabling ROS developer to easily create amazing robotics advanced features, like intelligent collision avoidance and semantic SLAM.</li>
 </ul>
-<h3 id="ros2_openvino_toolkit"><a href="https://github.com/intel/ros2_openvino_tookin">ros2_openvino_toolkit</a></h3>
+<h3 id="ros2_openvino_toolkit"><a href="https://github.com/intel/ros2_openvino_tookit">ros2_openvino_toolkit</a></h3>
 <ul>
 <li>The OpenVINO™ toolkit quickly deploys applications and solutions that emulate human vision. Based on Convolutional Neural Networks (CNN), the Toolkit extends computer vision (CV) workloads across Intel® hardware, maximizing performance.</li>
 <li>
@@ -143,7 +156,7 @@ Demo application to show above detection and recognitions</p>
 <ul>
 <li>The ROS 2 Navigation System is the control system that enables a robot to autonomously reach a goal state, such as a specific position and orientation relative to a specific map. Given a current pose, a map, and a goal, such as a destination pose, the navigation system generates a plan to reach the goal, and outputs commands to autonomously drive the robot, respecting any safety constraints and avoiding obstacles encountered along the way.</li>
 </ul>
-<h2 id="license">License</h2>
+<h1 id="license">License</h1>
 <p>Copyright 2018 Intel Corporation</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this project except in compliance with the License.
@@ -205,5 +218,5 @@ limitations under the License.</p>
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-03-20 03:23:52
+Build Date UTC : 2019-03-20 03:46:23
 -->
